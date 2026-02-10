@@ -1,10 +1,27 @@
-# Python-generated files
+# API Keys
+.env
+.env.local
+.env.*.local
+
+# Python files
 __pycache__/
 *.py[oc]
 build/
 dist/
 wheels/
 *.egg-info
+*$py.class
+*.so
+.Python
 
 # Virtual environments
 .venv
+.venv/
+venv/
+ENV/
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
