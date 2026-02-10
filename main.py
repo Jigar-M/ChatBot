@@ -24,6 +24,20 @@ def calculator(a: float, b: float) -> str:
 
 def main():
 
+    # Check if API key is configured
+    if not API_KEY:
+        print("⚠️  Configuration Required!")
+        print("=" * 50)
+        print("To use this AI Assistant, you need to:")
+        print("1. Get a free API key from: https://makersuite.google.com/app/apikey")
+        print("2. Create a '.env' file in this directory")
+        print("3. Add: GEMINI_API_KEY=your_actual_key_here")
+        print("=" * 50)
+
+        # Run demo mode
+        run_demo_mode()
+        return
+
     if not api_key:
         print("Error: GEMINI_API_KEY not found in .env file")
         return
